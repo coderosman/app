@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home page</title>
+  <link rel="stylesheet" href="./style2.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./bootstrape/bootstrap.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header>
+    <div id="mySidenav" class="sidenav">
+      <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a class="nav12"  href="./index.html">home</a>
+      <a class="nav12"  href="https://www.youtube.com/channel/UCIzBoMSDi77kVw4t1PR2H6g/videos"  target="-blank">video</a>
+      <a class="nav12"  href="https://www.youtube.com/channel/UCIzBoMSDi77kVw4t1PR2H6g/playlists" target="-blank">playlist</a>
+      <a class="nav12" target="-blank" href="https://www.youtube.com/channel/UCIzBoMSDi77kVw4t1PR2H6g">subscribe</a>
+
+    </div>
+    
+    <!-- Use any element to open the sidenav -->
+   <img id="img" style="width: 40px;height: 50px; float: right;cursor: pointer;" src="./image/nav.png" onclick="openNav()">
+    
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    
+
+    <label class="logo"><h2>coder osman</h2></label>
+ <ul>
+    <li class="nav1"  ><a class="nav2" id="active"   href="./index.html">home</a></li>
+      <li   class="nav1"><a class="nav2" href="https://www.youtube.com/channel/UCIzBoMSDi77kVw4t1PR2H6g/videos"  target="-blank">video</a></li>
+         <li  class="nav1" ><a class="nav2" href="https://www.youtube.com/channel/UCIzBoMSDi77kVw4t1PR2H6g/playlists" target="-blank">playlist</a></li>
+         <li id="nav4" class="nav1" > <a target="-blank" href="https://www.youtube.com/channel/UCIzBoMSDi77kVw4t1PR2H6g" class="btn btn-bd-download d-lg-inline-block my-2 my-md-0 ms-md-3 btn-warning">subscribe</a></li>
+  </ul> 
+  
+ </nav>
+  </header>
+  <main>
+    <div class="content">
+      <h1>My Channel</h1>
+    <p >Subscribe to my channel and do the notification bell to receive all new</p>
+ <div >
+   <button class="subscribe" type="button"><a href="https://www.youtube.com/channel/UCIzBoMSDi77kVw4t1PR2H6g"><span id="span"></span> subscribe</a></button>
+ </div>
+  </div>
+  </main>
+  <script src="./bootstrape/bootstrap.js">
+ 
+  </script>
+  <script>      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.body.style.backgroundColor = "white";
+    }</script>
+</body>
+</html>
